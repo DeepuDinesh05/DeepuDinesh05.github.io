@@ -1,0 +1,60 @@
+body, h1, h3 
+{
+    font-family: 'Space Grotesk', calibri;
+}
+
+p
+{
+    font-size: 1.1em;
+    font-family: calibri;
+}
+
+a,svg
+{
+    color:white;
+}
+
+.nav-link:hover
+{
+    color: #eab028;
+    font-size: 1.2em;
+}
+
+.card-header:hover
+{
+    background: #eab028;
+    color:white;
+    text-decoration: none;
+}
+
+.tech-icon {
+    margin-right: 0.5em; /* Adds space between the image and text */
+}
+
+a:hover 
+{
+    color: #eab028;
+}
+
+section
+{
+    padding-top: 2em;
+}
+
+hr
+{
+    width: 50%;
+}
+
+img
+{
+    max-width: 50%;
+    justify-items: center;
+}
+
+/* Optional: Restrict container width */
+#skillscontainer 
+{
+    justify-content: left;
+    max-width: 20%; /* Adjust this value as needed */
+}
