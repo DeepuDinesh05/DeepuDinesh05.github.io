@@ -8,7 +8,7 @@ body, h1, h3
 p
 {
     font-size: 1.1em;
-    font-family: calibri;
+    font-family: 'Space Grotesk', calibri;
 }
 
 section
@@ -70,17 +70,25 @@ a:hover
 
 /* ---------- CARDS ---------- */
 
-.card
+#WkExpCard,#EduCard
 {
     transition: transform 0.1s ease;
 }
 
-.card:hover .card-header {
+#WkExpCard:hover .card-header 
+{
     background: #eab028; 
     color: white;
 }
 
-.card:hover {
+#EduCard:hover .card-header 
+{
+    background: red; 
+    color: white;
+}
+
+
+#WkExpCard:hover, #EduCard:hover {
     transform: scale(1.05); 
 }
 
