@@ -1,3 +1,5 @@
+/* ---------- BODY ---------- */
+
 body, h1, h3 
 {
     font-family: 'Space Grotesk', calibri;
@@ -14,6 +16,96 @@ section
     padding-top: 2em;
 }
 
+hr
+{
+    width: 50%;
+}
+
+/* ---------- ---------- ------ */
+
+
+
+/* ---------- LINKS ---------- */
+
+a
+{
+    color:white;
+    transition: transform 0.1s ease;
+}
+
+a:hover 
+{
+    transform: scale(1.05); 
+    /* color: #eab028; */
+}
+
+.customlink
+{
+    padding-left: 0.25em;
+    transition: transform 0.1s ease; 
+}
+
+.customlink:hover 
+{
+    transform: scale(1.05); 
+    color: #eab028; 
+}
+
+.nav-link
+{
+    transition: transform 0.2s ease;
+    display: inline-block;
+}
+
+.nav-link:hover
+{
+    color: #eab028;
+    transform: scale(1.05);
+    transform-origin: center; 
+}
+
+/* ---------- ---------- ------ */
+
+
+
+/* ---------- CARDS ---------- */
+
+.card
+{
+    transition: transform 0.1s ease;
+}
+
+.card:hover .card-header {
+    background: #eab028; 
+    color: white;
+}
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
+/* ---------- ---------- ------ */
+
+
+
+/* ---------- LIST ---------- */
+
+.list-group-item {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #eab028; 
+    color: white; 
+    transform: scale(1.05); 
+}
+
+/* ---------- ---------- ------ */
+
+
+
+/* ---------- IMAGES ---------- */
+
 img
 {
     max-width: 50%;
@@ -25,59 +117,9 @@ svg
     color:white;
 }
 
-a
-{
-    color:white;
-    transition: transform 0.1s ease;
-}
-
-a:hover 
-{
-    transform: scale(1.05); /* Increases the size of the card by 10% */
-    color: #eab028;
-}
-
-.customlink {
-    padding-left: 0.25em;
-    transition: transform 0.3s ease; /* Ensure transition is applied */
-}
-
-.customlink:hover {
-    transform: scale(1.1);
-}
-
-.nav-link
-{
-    transition: transform 0.3s ease;
-}
-
-.nav-link:hover
-{
-    color: #eab028;
-    transform: scale(1.1);
-}
-
-.card
-{
-    transition: transform 0.1s ease;
-}
-
-.card:hover .card-header {
-    background: #eab028; /* Set the desired color on hover */
-    color: white;
-}
-
-.card:hover {
-    transform: scale(1.05); /* Keeps the scale effect on hover */
-}
-
-
 .tech-icon 
 {
-    margin-right: 0.5em; /* Adds space between the image and text */
+    margin-right: 0.5em; 
 }
 
-hr
-{
-    width: 50%;
-}
+/* ---------- ---------- ------ */
