@@ -152,9 +152,14 @@ svg
 
 /* Change background color on hover */
 .dropdown-item:hover {
-    background-color: #eab028; 
+    background-color: #eab028;
     color: white; 
     overflow: hidden;
+}
+
+.dropdown-item.active {
+    background-color: #d47a2f;  /* Change to your desired active background color */
+    color: white;  /* Optional: Change the text color when active */
 }
 
 /* Hide overflow by default */
@@ -164,4 +169,16 @@ svg
 
 .dropdown-item {
     overflow: hidden;
+}
+
+/* Ensure the sub-dropdown aligns to the right */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;  /* Positions the sub-dropdown to the right */
+  margin-left: 0.1rem;  /* Optional: slight space between parent and sub-dropdown */
+  display: none;  /* Hide by default */
 }
