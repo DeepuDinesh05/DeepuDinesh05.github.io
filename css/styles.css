@@ -80,27 +80,35 @@ a:hover
 
 /* ---------- CARDS ---------- */
 
-#WkExpCard,#EduCard
+#WkExpCard,#EduCard, #ProjectsCard
 {
     transition: transform 0.1s ease;
 }
 
-#WkExpCard:hover .card-header 
+#WkExpCard:hover .card-header, #ProjectsCard:hover .card-header  
 {
     background: #eab028; 
     color: white;
 }
 
-#EduCard:hover .card-header 
+#EduCard:hover .card-header
 {
     background: red; 
     color: white;
 }
 
 
-#WkExpCard:hover, #EduCard:hover {
+#WkExpCard:hover, #EduCard:hover,#ProjectsCard:hover {
     transform: scale(1.05); 
 }
+
+
+.card-img-top
+{
+    max-width: 100%;
+}
+
+
 
 /* ---------- ---------- ------ */
 
@@ -142,4 +150,18 @@ svg
 
 /* ---------- ---------- ------ */
 
-/* Resume Page TODO */
+/* Change background color on hover */
+.dropdown-item:hover {
+    background-color: #eab028; 
+    color: white; 
+    overflow: hidden;
+}
+
+/* Hide overflow by default */
+.dropdown-menu {
+    overflow: hidden;
+}
+
+.dropdown-item {
+    overflow: hidden;
+}
