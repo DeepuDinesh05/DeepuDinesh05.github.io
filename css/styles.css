@@ -108,6 +108,18 @@ a:hover
     max-width: 100%;
 }
 
+.itch-embed-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.itch-embed-wrapper iframe {
+    width: 100%;
+    max-width: 552px;
+    height: 167px;
+    display: block;
+}
+
 
 
 /* ---------- ---------- ------ */
