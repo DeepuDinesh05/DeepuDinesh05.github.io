@@ -80,26 +80,46 @@ a:hover
 
 /* ---------- CARDS ---------- */
 
-#WkExpCard,#EduCard, #ProjectsCard
+.WkExpCard, .EduCard
 {
-    transition: transform 0.1s ease;
+    transition: transform 0.2s ease;
 }
 
-#WkExpCard:hover .card-header, #ProjectsCard:hover .card-header  
+.WkExpCard .card-header, .EduCard .card-header
 {
-    background: #eab028; 
+    transition: background-color 0.2s ease;
+}
+
+.WkExpCard:hover .card-header, .EduCard:hover .card-header
+{
+    background: rgba(255, 255, 255, 0.06);
     color: white;
 }
 
-#EduCard:hover .card-header
-{
-    background: red; 
-    color: white;
+
+.WkExpCard:hover, .EduCard:hover {
+    transform: scale(1.05);
 }
 
+.resume-scale-95 {
+    zoom: 0.95;
+}
 
-#WkExpCard:hover, #EduCard:hover,#ProjectsCard:hover {
-    transform: scale(1.05); 
+.skill-badge {
+    border-radius: 0;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    color: #fff;
+    font-weight: 500;
+    padding: 0.4em 0.75em;
+    font-size: 0.85em;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.skill-badge:hover {
+    background-color: #eab028;
+    border-color: #eab028;
+    color: #fff;
 }
 
 
@@ -185,7 +205,22 @@ a:hover
 }
 
 .badge-completed {
-    background-color: #3C6E47;
+    background-color: #4E8A5C;
+    color: #fff;
+}
+
+.list-group-item.project-row:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+    color: #fff;
+    transform: scale(1.0475);
+}
+
+.certificates-list .list-group-item {
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.certificates-list .list-group-item:hover {
+    background-color: rgba(255, 255, 255, 0.06);
     color: #fff;
 }
 
